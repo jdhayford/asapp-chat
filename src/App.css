@@ -1,0 +1,35 @@
+/*Top Level App CSS Styling*/
+
+body {
+  background: #e6e6e6;
+  overflow:hidden;
+  
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+.header {
+  height: 20px;
+  padding: 5px 20px 20px 20px;
+  margin: 0 0 20px 0;
+
+  background-color: #383B43;
+  text-align: center;
+  
+  font-size: 36px;
+  color: white;
+}
+
+.app {
+  height: 1000px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
