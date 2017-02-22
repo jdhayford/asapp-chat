@@ -6,7 +6,7 @@ class ChatInput extends Component {
 	constructor(props) {
 		super(props);
 		// Value will represent the current value of the input, prior will be used
-		// to store what it was 5 seconds ago to check for a change
+		// to store what it was 3 seconds ago to check for a change
 		this.state = {value:'',prior:''};
 		this.handleChange = this.handleChange.bind(this);
 		this.handleClick = this.handleClick.bind(this);
@@ -15,7 +15,7 @@ class ChatInput extends Component {
 		// A timing interval will be used to tell if the user has continued
 		// typing or if they have stopped and the input has not changed in the last
 		// 5000 ms, if so it will change the typing status back to false
-		setInterval(this.typingTimeout, 5000);
+		setInterval(this.typingTimeout, 3000);
 		this.typingTimeout();
 	}
 
@@ -30,7 +30,7 @@ class ChatInput extends Component {
 	}
 
 	// Timeout function to determine if the input has changed over the last
-	// 5 seconds to determine if other chatter is still typing, if not the
+	// 'x' seconds to determine if other chatter is still typing, if not the
 	// typing status will revert to false
 	typingTimeout() {
 		if (this.state.value==="" | this.state.value === this.state.prior) {
