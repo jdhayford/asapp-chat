@@ -31,7 +31,7 @@
   margin-bottom: 0px;
   font-weight: normal;
   color:white;
-  background: #4d4d4d;
+  background: #4b4e55;
 }
 
 
@@ -59,7 +59,8 @@
 .chatInput .submitButton {
   flex: 2;
   align-self: stretch;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 28px;
   cursor:pointer;
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
