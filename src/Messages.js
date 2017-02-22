@@ -5,10 +5,6 @@ import './Messages.css';
 import Message from './Message';
 
 class Messages extends Component {
-	constructor(props) {
-		super(props);
-
-	}
 
 	// Scroll to the bottom when a new message is sent
 	componentDidUpdate() {
@@ -32,7 +28,7 @@ class Messages extends Component {
 				from={message.from}
 				to={message.to}
 				message={message.message}
-				fromMe={this.props.name==message.from}
+				fromMe={this.props.name===message.from}
 				timestamp={message.timestamp} />
 		));
 

@@ -6,7 +6,6 @@ import ChatWindow from './ChatWindow';
 class App extends Component {
   constructor(props) {
     super(props);
-    // Example first messages for testing
     this.state = {typing:
         {"Rob":false,"Laura":false},
       messages: []
@@ -19,14 +18,13 @@ class App extends Component {
   // the parent App to update the shared message log
   updateMessages(message) {
     this.state.messages.push(message);
-    this.forceUpdate();
-    console.log(this.state.messages);
+    this.forceUpdate();  // TODO Possibly look into work-around to avoid force
   }
 
   // Change the typing obect to reflect a change to the typing status for a user
   alertTyping(user,status) {
     this.state.typing[user] = status;
-    this.forceUpdate();
+    this.forceUpdate(); // TODO Possibly look into work-around to avoid force
   }
 
   render() {

@@ -33,7 +33,7 @@ class ChatWindow extends Component {
 
 	// Return the name of the other person this chat window chats with
 	getOther() {
-		return (this.props.name == "Rob" ? "Laura" : "Rob");
+		return (this.props.name === "Rob" ? "Laura" : "Rob");
 	} 
 
 	render() {
